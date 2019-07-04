@@ -1,0 +1,11 @@
+<div class="shopcar" > 
+    <a [routerLink]='["/car"]'>
+        <input type="button" value="点击进入购物车" class="shop_input" />
+    </a>
+    <dl *ngFor='let item of store.goods;' class="shop_list">
+        <dt>标题:{{item.price}}</dt>
+        <dd>描述:{{item.name}}</dd>
+        <input type="button" value="点击加入购物车"  (click)='goshop(item.product_id)'/>
+    </dl>
+   
+</div>

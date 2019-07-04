@@ -1,0 +1,14 @@
+.buycar{
+    background: Cyan;
+    margin-bottom: 60px;
+}
+.buycar input{
+    width: 100px;
+    height: 30px;
+}
+.buycar .box{
+    margin-right: 20px;
+}
+.buycar .box2{
+    margin-left: 20px;
+}

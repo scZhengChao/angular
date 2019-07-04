@@ -1,0 +1,28 @@
+<div class='content'>
+  <p class='fhbtn'><a href="javascript:history.go(-1);"></a></p>
+  <h1></h1>
+  <div class='loginbox'>
+  <p class='lsolid'></p>
+  <div class='login'>
+        <a [routerLink]="['/login']">登录</a>
+        <span></span>
+        <a  [routerLink]="['/reg']">注册</a>
+  </div>
+  <p class='rsolid'></p>
+  </div>
+      <ul>
+          
+  <li class='lifirst'>
+              <input type="text" [(ngModel)]="name"/>
+      <span>帐号</span>
+  </li>
+  <li>
+              <input type="text" [(ngModel)]="password"/>
+      <span>密码</span>
+  </li>
+  </ul>
+  <div class=footbox}>
+          <input type="button" value="登 录" class='loginbtn' (click)='login()'/>
+  <a href="javascript:;" class='tishi'>忘记密码？</a>
+  </div>
+</div>

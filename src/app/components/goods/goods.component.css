@@ -1,0 +1,16 @@
+
+.shopcar{
+    background: #399;
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+.shopcar .shop_list{
+    margin-top: 5px; background: pink
+};
+.shopcar .shop_input{
+    width: 100px;
+    height: 30px;
+}
+.shopcar .shop_input:hover{
+    background: red
+}

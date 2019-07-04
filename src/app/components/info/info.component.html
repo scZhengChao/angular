@@ -1,0 +1,36 @@
+<section class="aui-flexView " data-ydui-tab>
+  <!-- 头部信息 begin -->
+  <header class="aui-navBar">
+    <a href="javascript:history.back(-1)" class="aui-navBar-item">
+      <i class="aui-icon aui-icon-back"></i>
+    </a>
+    <div class="aui-navBar-center">
+      <span class="aui-navBar-title">
+        <div class="aui-model-page-title">
+          <ul class="tab-nav tab-nav-clear-ri">
+            <li class="tab-nav-item " [routerLink]="['./infoa']" routerLinkActive='tab-active'>
+              <a href="javascript:;" >消息</a>
+            </li>
+            <li class="tab-nav-item " [routerLink]="['./infob']" routerLinkActive='tab-active'>
+              <a href="javascript:;" >私信</a>
+            </li>
+          </ul>
+        </div>
+      </span>
+    </div>
+    <a href="javascript:;" class="aui-navBar-item">
+      <i class="aui-icon aui-icon-user"></i>
+    </a>
+  </header>
+  <!-- 头部信息 end -->
+  <section class="aui-scrollView">
+    <div class="aui-content">
+      <div class="tab-panel">
+       <!-- <app-infoa></app-infoa> -->
+        <router-outlet></router-outlet>
+        
+      </div>
+    </div>
+  </section>
+
+</section>

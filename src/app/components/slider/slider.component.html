@@ -1,0 +1,13 @@
+ <!-- 首页轮播滚动 begin -->
+ <div class="m-slider" data-ydui-slider>
+  <div class="slider-wrapper">
+    <div class="slider-item" *ngFor='let item of banner; let i = index;trackBy:item?.id'>
+      <a [routerLink]="['/pages']">
+        <p class="aui-slider-text">{{item.title}}</p>
+        <img [src]="item.img">
+      </a>
+    </div>
+  </div>
+  <div class="slider-pagination"></div>
+</div>
+<!-- 首页轮播滚动 end -->

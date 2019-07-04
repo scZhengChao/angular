@@ -1,0 +1,14 @@
+<div class="buycar">
+  <dl *ngFor='let item of store.car;let i =index;trackBy:item?.id;'>
+      <dt>标题:{{item.price}}</dt>
+      <dd>描述:{{item.name}}</dd>
+      <dd>
+          <input  type="button" value="+" class="box" (click)='add(item.product_id)'/>
+          {{item.number}}
+          <input  type="button" value="-"  class="box2" (click)='sub(item.product_id)'/>
+      </dd>
+      <dd><input  type="button" value="删除"  (click)='remove(item.product_id)'/></dd>
+  </dl>
+  <input type="button" value="清空购物车"  (click)='clear()'/>
+  <p>合计:</p>
+</div>
